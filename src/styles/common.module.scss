@@ -1,1 +1,11 @@
-// TODO
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mainContent {
+  width: 45rem;
+  margin: 0 auto;
+}
