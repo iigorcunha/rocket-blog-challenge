@@ -7,6 +7,11 @@
     font-size: 3rem;
     margin-top: 5rem;
   }
+
+  hr {
+    border: 1px solid var(--gray-300);
+    opacity: 0.1;
+  }
 }
 
 .banner {
@@ -36,6 +41,10 @@
     font-weight: 400;
     margin-bottom: 1rem;
   }
+
+  a {
+    color: var(--pink-500);
+  }
 }
 
 
@@ -56,4 +65,48 @@
       margin-left: 1.5rem;
     }
   }
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+
+  div {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &.prevPost {
+      justify-content: center;
+    }
+
+    &.nextPost {
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    h3 {
+      font-size: 1.125rem;
+      width: 70%;
+      font-weight: 400;
+      color: var(--gray-300);
+      margin-bottom: 2rem;
+      text-align: justify;
+    }
+
+    a {
+      color: var(--pink-500);
+    }
+}
+}
+
+.prevButton {
+
+}
+
+.nextButton {
+
 }
