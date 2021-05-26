@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { GetStaticProps } from 'next';
+import Head from 'next/head';
 import Prismic from '@prismicio/client';
 import { FiCalendar, FiUser } from 'react-icons/fi';
 
@@ -63,6 +64,9 @@ export default function Home({
   }
   return (
     <main className={commonStyles.container}>
+      <Head>
+        <title>spacetraveling</title>
+      </Head>
       <div className={styles.container}>
         <Header />
         {posts.map(post => (

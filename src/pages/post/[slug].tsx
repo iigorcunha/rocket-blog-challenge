@@ -6,7 +6,6 @@ import { FiCalendar, FiClock, FiUser } from 'react-icons/fi';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Head from 'next/head';
-import { useEffect } from 'react';
 import { getPrismicClient } from '../../services/prismic';
 
 import commonStyles from '../../styles/common.module.scss';
@@ -80,6 +79,9 @@ export default function Post({
 
   return (
     <div className={commonStyles.container}>
+      <Head>
+        <title>spacetraveling</title>
+      </Head>
       <Header />
       <img
         className={styles.banner}
