@@ -80,9 +80,6 @@ export default function Post({
 
   return (
     <div className={commonStyles.container}>
-      <Head>
-        <title>Teste</title>
-      </Head>
       <Header />
       <img
         className={styles.banner}
